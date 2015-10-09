@@ -25,3 +25,23 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+
+text = input("Please enter a string of text (the bigger the better):")
+print('You entered "' + text + '". Now jumble it:')
+
+i = len(text)
+alphanums = range(1, int(i)+1)
+Alphabet = list(text)
+
+print(text[::-1])
+
+words = text.split(" ")
+print(' '.join(words[::-1]))
+
+l = len(words)
+b = 0
+
+while int(l) > int(b):
+    sw = words[int(b)]
+    print(sw[::-1], end = ' ')
+    b = int(b)+1
